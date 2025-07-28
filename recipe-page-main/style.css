@@ -5,7 +5,10 @@ body,
 h1,
 h2,
 p,
-hr {
+hr,
+ol,
+ul,
+li {
   margin: 0;
 }
 .young-serif-regular {
@@ -13,47 +16,78 @@ hr {
   font-weight: 400;
   font-style: normal;
 }
-.outfit {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
 .outfit-regular {
-   font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
 }
 .outfit-semibold {
-   font-weight: 600;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
 }
 .outfit-bold {
-   font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
 }
-
 
 body {
   background: #f3e5d7;
   padding-block: 128px;
+  color: #5f564d;
 }
-
-span {
-   font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
 main {
   width: 736px;
   background-color: #fff;
   margin-inline: auto;
   padding: 40px;
+  border-radius: 24px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 100%;
+  color: #312e2c;
+  padding-block-end: 24px;
+}
+hgroup>p {
+  line-height: 150%;
+}
+
+li {
+ line-height: 150%;
 }
 
 img {
   margin-block-end: 40px;
 }
+.prepar {
+  background: #fff7fb;
+}
+.prepar li::marker {
+  color: #7a284e;
+}
+
+.prepar h2 {
+  color: #7a284e;
+  font-size: 20px;
+  line-height: 100%;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 16px;
+}
+section li::marker {
+  color: #854632;
+}
 
 section h2.young-serif-regular {
-   color: #854632;
+  color: #854632;
+  font-size: 28px;
+  line-height: 100%;
+  padding-block-end: 24px;
 }
 
 .flx {
@@ -61,15 +95,39 @@ section h2.young-serif-regular {
   flex-direction: column;
   row-gap: 32px;
 }
-.prepar {
-background: #FFF7FB;
-}
-.prepar h2 {
-   color: #7A284E;
-}
 
 hr {
   background-color: #e4ded8;
   border: none;
   height: 1.5px;
+}
+section > p {
+  padding-block-end: 24px;
+}
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nutrition-flx {
+  display: flex;
+  border-bottom: 1.5px solid #e3ddd7;
+  padding-block: 12px;
+}
+
+.nutrition-flx:last-child {
+  border: none;
+}
+
+.nutrition-flx p {
+  width: 50%;
+  text-align: left;
+  padding-inline-start: 32px;
+}
+
+.nutrition-flx span {
+  width: 50%;
+  text-align: left;
+  color: #854632;
+  padding-inline-start: 10px;
 }
