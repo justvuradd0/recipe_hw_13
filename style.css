@@ -73,8 +73,9 @@ img {
 }
 .prepar {
   background: #fff7fb;
-  padding-inline-start: 24px;
+  padding: 24px;
   border-radius: 12px;
+
 }
 .prepar li::marker {
   color: #7a284e;
@@ -85,7 +86,6 @@ img {
   color: #7a284e;
   font-size: 20px;
   line-height: 100%;
-  padding-block-start: 24px;
   padding-block-end: 16px;
 }
 section li::marker {
@@ -121,11 +121,12 @@ section > p {
 .nutrition-flx {
   display: flex;
   border-bottom: 1.5px solid #e3ddd7;
-  padding-block: 12px;
+  padding-block-end: 12px;
 }
 
 .nutrition-flx:last-child {
   border: none;
+  padding-block-end: 0;
 }
 
 .nutrition-flx p {
