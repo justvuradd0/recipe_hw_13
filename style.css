@@ -90,6 +90,9 @@ img {
 section li::marker {
   color: #854632;
 }
+section li:last-child {
+  padding-block-end: 0;
+}
 
 section h2.young-serif-regular {
   color: #854632;
