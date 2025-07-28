@@ -40,8 +40,9 @@ body {
   padding-block: 128px;
   color: #5f564d;
 }
+
 main {
-  width: 736px;
+  max-width: 736px;
   background-color: #fff;
   margin-inline: auto;
   padding: 40px;
@@ -56,26 +57,34 @@ h1 {
 hgroup>p {
   line-height: 150%;
 }
+ul, ol {
+padding-left: 28px;
+}
 
 li {
  line-height: 150%;
+ padding-block-end: 8px;
+ padding-left: 12px;
 }
 
 img {
   margin-block-end: 40px;
+  width: 100%;
 }
 .prepar {
   background: #fff7fb;
+  padding-inline-start: 24px;
+  border-radius: 12px;
 }
 .prepar li::marker {
   color: #7a284e;
+  
 }
 
 .prepar h2 {
   color: #7a284e;
   font-size: 20px;
   line-height: 100%;
-  padding-inline-start: 24px;
   padding-block-start: 24px;
   padding-block-end: 16px;
 }
